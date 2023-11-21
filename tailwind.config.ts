@@ -16,6 +16,8 @@ const config: Config = {
 				'primary': '#3b4c5d',
 				'secondary': '#e4af10',
 				'about': '#76d1ff',
+				'footer': '#272e37',
+				'form': '#2b353f',
 			},
 			fontFamily: {
 				'arial': ['arial'],
