@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prod": "npm run build && npx next start -p 4001",
     "lint": "next lint"
   },
   "dependencies": {
-    "@splidejs/react-splide": "^0.7.12",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18"

@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1 {
-    @apply tw-text-[24px] md:tw-text-[36px];
-  };
-  h2 {
-    @apply tw-text-[14px] md:tw-text-[24px];
-  };
-  h3 {
-    @apply tw-text-[11px] md:tw-text-[14px];
-  };
-  p {
-    @apply tw-text-[8px] md:tw-text-[11px];
-  };
-  a {
-    @apply tw-text-[14px] tw-no-underline;
-  };
-};
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -49,36 +31,4 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-};
-
-.flex-w-full {
-  @apply tw-flex tw-w-full;
-};
-
-.iconStatementTitle {
-  @apply tw-font-bold tw-mb-2;
-};
-
-.iconStatement {
-  @apply tw-flex tw-py-4;
-};
-
-.icon {
-  @apply tw-w-20 tw-pr-2;
-};
-
-.icon-about-h {
-  @apply tw-h-[100vh] sm:tw-h-[464px] lg:tw-h-[444px];
-};
-
-.form-input {
-  @apply tw-my-3 tw-p-3 tw-bg-form tw-border tw-border-zinc-400 placeholder:tw-font-bold;
-};
-
-.btn-submit {
-  @apply tw-bg-[#4a4d52] tw-flex tw-justify-center tw-items-center tw-text-[12px] tw-p-2 tw-my-3 tw-rounded;
-};
-
-.contact-info {
-  @apply tw-flex tw-m-4 tw-items-center;
 };

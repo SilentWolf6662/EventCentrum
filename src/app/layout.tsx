@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="tw-font-arial container">{children}</body>
+      <body className="tw-font-arial bs-container">{children}</body>
     </html>
   )
 }
