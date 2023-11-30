@@ -4,9 +4,6 @@ export default function Home() {
 	function readMore() {
 		location.href = "./";
 	};
-	function submit() {
-		location.href = "./";
-	};
 	return (
 		<>
 			<header className="tw-flex tw-w-full tw-justify-between tw-bg-primary tw-h-[50px] tw-content-center tw-text-white">
@@ -39,8 +36,8 @@ export default function Home() {
 							<button className="bs-btn 	btn-outline-primary tw-mt-[100px]" onClick={readMore}>Læs mere</button>
 						</div>
 					</section>
-					<section className="tw-h-[100vh] sm:tw-h-[464px] lg:tw-h-[444px] tw-flex">
-						<div className="tw-h-[100vh] sm:tw-h-[464px] lg:tw-h-[444px] tw-w-1/2 tw-bg-about tw-text-white">
+					<section className="tw-h-full md:tw-h-[444px] tw-flex tw-flex-col md:tw-flex-row">
+						<div className="tw-h-full md:tw-h-[444px] tw-w-full md:tw-w-1/2 tw-bg-about tw-text-white">
 							<div className="tw-m-10 tw-text-justify">
 								<h1 className="tw-mb-5 tw-text-[24px] md:tw-text-[36px]">Hvem er vi?</h1>
 								<h3 className="tw-mb-4 tw-text-[11px] md:tw-text-[14px]">
@@ -64,7 +61,7 @@ export default function Home() {
 								</h3>
 							</div>
 						</div>
-						<div className="tw-h-[100vh] sm:tw-h-[464px] lg:tw-h-[444px] tw-w-1/2 tw-bg-white tw-text-black">
+						<div className="tw-h-full md:tw-h-[444px] tw-w-full md:tw-w-1/2 tw-bg-white tw-text-black">
 							<div className="tw-m-10 tw-text-justify tw-flex tw-flex-col">
 								<div className="tw-flex tw-py-4">
 									<figure>
@@ -128,9 +125,9 @@ export default function Home() {
 				</article >
 			</main >
 
-			<footer className="tw-flex tw-w-full tw-justify-between tw-bg-footer tw-h-[580px] tw-content-center tw-text-white">
-				<div className="tw-flex tw-w-full">
-					<div className="tw-w-1/2">
+			<footer className="tw-flex tw-w-full tw-justify-between tw-bg-footer tw-h-[925px] md:tw-h-[580px] tw-content-center tw-text-white tw-flex-col md:tw-flex-row">
+				<div className="tw-flex tw-w-full tw-flex-col md:tw-flex-row">
+					<div className="tw-w-full md:tw-w-1/2">
 						<div className="tw-m-10 tw-mt-16">
 							<h1 className="tw-text-[24px] md:tw-text-[36px]">
 								Kontakt os
@@ -179,14 +176,14 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="tw-w-1/2">
+					<div className="tw-w-full md:tw-w-1/2">
 						<form action="" className="tw-m-10 tw-p-10 tw-mt-16 tw-bg-form">
 							<h3 className="tw-font-bold tw-mb-2 tw-text-[11px] md:tw-text-[14px]">Send os en besked</h3>
 							<div className="tw-flex tw-flex-col tw-w-2/3">
 								<input type="text" name="name" id="name" placeholder="Skriv dit navn her" className="tw-my-3 tw-p-3 tw-bg-form tw-border tw-border-zinc-400 placeholder:tw-font-bold placeholder:tw-text-[5px] md:placeholder:tw-text-[10px] lg:placeholder:tw-text-[16px]" />
 								<input type="email" name="email" id="email" placeholder="Skriv din email her" className="tw-my-3 tw-p-3 tw-bg-form tw-border tw-border-zinc-400 placeholder:tw-font-bold placeholder:tw-text-[5px] md:placeholder:tw-text-[10px] lg:placeholder:tw-text-[16px]" />
 								<textarea name="message" id="message" cols={20} rows={5} placeholder="Skriv din besked her" className="tw-resize-none tw-my-3 tw-p-3 tw-bg-form tw-border tw-border-zinc-400 placeholder:tw-font-bold placeholder:tw-text-[5px] md:placeholder:tw-text-[10px] lg:placeholder:tw-text-[16px]"></textarea>
-								<button className="tw-bg-[#4a4d52] tw-flex tw-justify-center tw-items-center tw-text-[12px] tw-p-2 tw-my-3 tw-rounded" onClick={submit}>
+								<button className="tw-bg-[#4a4d52] tw-text-white tw-flex tw-justify-center tw-items-center tw-text-[12px] tw-p-2 tw-my-3 tw-rounded">
 									<img src="/img/sendEmail.png" alt="Send Email Icon" className="tw-pr-4" />
 									Send
 								</button>

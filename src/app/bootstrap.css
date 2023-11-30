@@ -2914,7 +2914,7 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.bs-btn-check:checked + .bs-btn, :not(.bs-btn-check) + .bs-btn:active, .bs-btn:first-child:active, .bs-btn.active, .bs-btn.show {
+.bs-btn-check:checked + .bs-btn, :not(.bs-btn-check) + .bs-btn:active, .bs-btn:first-child:active, .bs-btn.active, .bs-btn.show, .bs-btn, .bs-btn:hover {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
